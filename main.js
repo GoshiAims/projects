@@ -43,12 +43,6 @@ function init() {
     scene.add( cube );
 
     cube.rotation.x = 3.7
-
-    const rect = effect.domElement.getBoundingClientRect();
-    console.log('ASCII DOM bounds:', rect.left, rect.top, rect.width, rect.height);
-    console.log(window.innerWidth / 2)
-    console.log(window.innerHeight / 2)
-    console.log('BRUHHHHHHHHHHHH')
   
     window.addEventListener('resize', onWindowResize);
 }
