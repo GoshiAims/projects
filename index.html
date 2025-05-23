@@ -5,17 +5,56 @@
   <title>berserk</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="background-color: black;">
     <div id="loading-screen">Loading...</div>
     <div id="mobile-message"style="display: none;">Mobile support coming soon.</div>
+
     <div id="top-buttons">
-    <button class="side-button" id="btn-history">History</button>
-    <button class="side-button" id="btn-project">Projects</button>
-    <button class="side-button" id="btn-contact">Contact</button>
-  </div>
+      <button class="nav-button" id="btn-history">History</button>
+      <button class="nav-button" id="btn-projects">Projects</button>
+      <button class="nav-button" id="btn-contact">Contact</button>
+    </div>
+    
     <!-- <div id="debug-dot"></div> -->
-    <div id="ascii-container"></div>
-    <div id="ascii-message">site is under [re]construction</div>
+    
+    <div id="main-page">
+      <div id="ascii-container"></div>
+      <div id="ascii-message">site is under [re]construction</div>
+    </div>
+
+    <div id="contact-page" class="hidden">
+      <span class="close-page">[×]</span>
+      <h1>> Contact Me<span class="blinking-cursor">_</span></h1>
+      <p>Please email <a href="mailto:Keegan@berserk.co.nz"  style="color: inherit; text-decoration: underline;">Keegan@berserk.co.nz</a></p>
+    </div>
+    
+    <div id="history-page" class="hidden">
+      <span class="close-page">[×]</span>
+      <h1>> History<span class="blinking-cursor">_</span></h1>
+      <p>
+        jan 2021 - founded<br>
+        berserk originally started as a consulting and prototyping service for expert advisors. 
+        These are bots that allow you to interact with the metatrader application programmatically to do <a href="https://www.google.com/search?q=what+is+forex+trading" 
+        target="_blank" style="color: inherit; text-decoration: underline;">FX trading</a>.<br>
+        <br>
+        june 2022 - change in direction<br>
+        berserk transitioned over to a mobile tech support service, providing on-site troubleshooting, repairs and IT assistance for individuals and business'.<br>
+        <br>
+        may 2025 - next step<br>
+        berserk is planning to incorporate within the next few weeks and go to the next level, this includes a social media presence and possibly expanding into game development.
+      </p>
+        
+    </div>
+
+    <div id="projects-page" class="hidden">
+      <span class="close-page">[×]</span>
+      <h1>> Projects<span class="blinking-cursor">_</span></h1>
+      <div type="button" id="projects-container">
+        <div id="btn2dsandboxgame" class="project-object"><h3>2d sandbox game</h3><br>
+        2d sandbox game is an untitled terraria clone, the game is in its early stages of development
+        </div>
+      </div>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
